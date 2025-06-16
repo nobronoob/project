@@ -1,0 +1,110 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    /* background: rgb(167, 136, 136); */
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+.navbar{
+    width: 99%;
+    height: 100%;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    background: #2c3e50;
+    border-radius: 10px;
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+    display: flex;
+}
+
+.navbar p{
+    font-size: 1.5rem;
+    color: white;
+    padding-top: 15px;
+    padding-left: 20px;
+    display: inline-block;
+}
+.navbar p:hover{
+    scale: 1.02;
+    transition: all 1sec;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+}
+
+.head-sec{
+    /* margin-top: 10px; */
+    display: flex;
+    margin-left: 25%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.list{
+    display: flex;
+    list-style: none;
+}
+
+.list a{
+    padding-left: 50px;
+    margin-left: 35px;
+    list-style: none;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: white;
+    display: inline-block;
+}
+
+.list a::after{
+    content: '';
+    width: 0%;
+    height: 2.5px;
+    bottom: -3px;
+    left: 0;
+    background: white;
+    display: block;
+    transition: all .75s;
+}
+
+.list a:hover::after{
+    width: 100%;
+}
+.find a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin-left: 100px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background: rgb(151, 121, 65);
+}
+
+.top{
+    display: flex;
+    text-align: center;
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+
+.top a{
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.top p{
+    font-size: 1.01rem;
+    color: #4e4e4d;
+    font-weight: 300;
+    font-family: 'Courier New', Courier, monospace;
+}
+.serv-title{
+    margin-left: 50px;
+    width: 750px;
+}
