@@ -11,37 +11,41 @@
  
     <!-- <div class="wid"> -->
     <header class="navbar">
-        <p>
-            <a href="#Back"> Project </a>
-        </p>
-        <div class="head-sec">
-            <ul class="list">
-                <li>
-                    <a href="service.html"> Services </a>
-                </li>
-
-                <li>
-                    <a href="#Work"> How It Works </a>
-                </li>
-                
-                <li>
-                    <a href="about.html"> About US </a>
-                </li>
-                
-                <li>
-                    <a href="blog.html"> Blogs </a>
-                </li>
-                
-                <li>
-                    <a href="login.html"> Login </a>
-                </li>
-            </ul>
-            <span class="find">
-                <a href="beprov.html"> Become Provider </a>
-            </span>
-        </div>
-    </header>
-
+    <p>
+        <a href="#Back"> Project </a>
+    </p>
+    
+    <!-- Hamburger menu icon -->
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    
+    <div class="head-sec" id="mobileMenu">
+        <ul class="list">
+            <li>
+                <a href="service.html"> Services </a>
+            </li>
+            <li>
+                <a href="#Work"> How It Works </a>
+            </li>
+            <li>
+                <a href="about.html"> About US </a>
+            </li>
+            <li>
+                <a href="blog.html"> Blogs </a>
+            </li>
+            <li>
+                <a href="login.html"> Login </a>
+            </li>  
+            </li>
+        </ul>
+        <span class="find">
+            <a href="beprov.html"> Become Provider </a>
+        </span>
+    </div>
+</header>
     <div class="content">
         <div class="title-head">
             <p class="title">
@@ -93,7 +97,7 @@
                             <li> No extra fees for nights/weekends</li>
                             <li> Leak detection & repair</li>
                         </ul>
-                            <a href="login.html" ><button class="btn-item fir arrow">See More</button></a>
+                            <a href="service/plumb.html" ><button class="btn-item fir arrow">See More</button></a>
                 </span>
             </div>
        
@@ -121,7 +125,7 @@
                 <!-- <p class="item-p">Plumber</p>  -->
             </span>
                 <span class="service-plum">  
-                    <h2 >Appliance Repair Experts</h2>
+                    <h2>Appliance Repair Experts</h2>
                         <p>Our technicians handle everything from broken fridges to malfunctioning washing machines with fast turnaround..</p>
                            <ul> 
                                 <li>24/7 emergency service</li>
@@ -151,9 +155,8 @@
 
         </div> 
     </div>
-
-
 </main>
+
     <div id="about">
         <div class="review">
     <div class="review-up">
@@ -172,7 +175,7 @@
    
     <div class="review-ls">
         <h3>Reviews</h3>
-        <span>
+        <span class="top-rate">
             <p class="review-rate">4.0</p>
             <img src="pic/graph.png" alt="rating">
             <p class="star">Over 100+ review</p>
@@ -229,7 +232,7 @@
         </div>
     </div>
 </div>
-
+</div>
 
    <!-- Footer -->
  
@@ -319,6 +322,35 @@
                 }
             });
         });
+    
+    // Mobile menu toggle
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    
+    hamburger.addEventListener('click', function() {
+        this.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+        
+        // Toggle body scroll when menu is open
+        if (mobileMenu.classList.contains('active')) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = '';
+        }
+    });
+    
+    // Close menu when clicking on a link
+    const navLinks = document.querySelectorAll('.head-sec a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            if (window.innerWidth <= 768) {
+                hamburger.classList.remove('active');
+                mobileMenu.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+    });
+
     </script>
 </body>
 </html>
