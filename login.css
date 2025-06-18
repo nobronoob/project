@@ -16,7 +16,7 @@ body {
     width: 100%;
     max-width: 400px;
     padding: 30px;
-    }
+}
 #login-form{
     height: 400px;
 }
@@ -37,16 +37,31 @@ label {
     font-weight: bold;
 }
 input {
-    width: 90%;
-    padding: 10px;
+    width: 350px;
+    padding: 15px 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 10px;
 }
 input:focus {
     border-color: #4a90e2;
     outline: none;
+}
+.pw, .code{
+    display: flex;
+}
+.pw-input{
+    width: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.code select{
+    width: 100px;
+    padding: 0px 8px 0px 8px ;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 10px;
 }
 .btn {
     width: 100%;
@@ -77,7 +92,6 @@ input:focus {
     display: none;
 }
 
-/* form */
 .form-sec{
     background-color: #f8f9fa;
    
@@ -285,7 +299,6 @@ textarea::placeholder {
     position: relative;
 }
 
-/* Media */
 @media (max-width: 768px) {
     fieldset {
         width: 90%;

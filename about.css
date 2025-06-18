@@ -269,7 +269,7 @@ html{
   box-shadow: 0 8px 30px rgba(0,0,0,0.1);
   margin-top: 0px;
 }
-/* Hero Section Media Queries */
+
 @media (max-width: 1200px) {
     .hero-section {
         padding: 50px 40px;
@@ -484,7 +484,7 @@ footer {
 .footer-bottom a:hover {
   text-decoration: underline;
 }
-/* Footer Media Queries */
+
 @media (max-width: 992px) {
     .footer-container {
         grid-template-columns: repeat(2, 1fr);
@@ -634,7 +634,6 @@ footer {
     border-radius: 15px;
 }
 
-/* Header/Navbar Media Queries */
 @media (max-width: 1200px) {
     .navbar {
         margin-bottom: 80px;
@@ -687,7 +686,6 @@ footer {
         padding-top: 12px;
     }
     
-    /* Hamburger menu styles */
     .hamburger {
         display: block;
     }
@@ -741,7 +739,6 @@ footer {
         padding: 12px 10px;
     }
     
-    /* Hamburger animation */
     .hamburger.active span:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
     }
@@ -784,7 +781,6 @@ footer {
     }
 }
 
-/* Additional small screen adjustments */
 @media (max-width: 400px) {
     .head-sec {
         width: 85%;
@@ -794,7 +790,7 @@ footer {
         font-size: 1.1rem;
     }
 }
-/* Hamburger menu styles */
+
 .hamburger {
     display: none;
     cursor: pointer;
@@ -813,7 +809,6 @@ footer {
     transition: all 0.3s ease;
 }
 
-/* Mobile menu styles */
 @media (max-width: 768px) {
     .hamburger {
         display: block;
@@ -864,12 +859,10 @@ footer {
         display: none;
     }
     
-    /* Show mobile-only links when menu is active */
     .head-sec.active .mobile-only {
         display: block;
     }
     
-    /* Hamburger animation */
     .hamburger.active span:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
     }
@@ -896,7 +889,6 @@ footer {
     top: -32px; 
     border-radius: 10px;     
 }
- /* Breadcrumb Styles */
  .breadcrumb {
      padding: 50px 0px;
      margin-bottom: 30px;
@@ -938,7 +930,6 @@ footer {
      font-weight: 100;
 }
 
-/* Container Media Queries */
 @media (max-width: 1200px) {
     .container {
         height: 320px;

@@ -10,10 +10,9 @@
      <section class="top">
    <header class="navbar">
     <p>
-        <a href="#Back"> Project </a>
+        <a href="index.html#back"> Project </a>
     </p>
     
-    <!-- Hamburger menu icon -->
     <div class="hamburger" id="hamburger">
         <span></span>
         <span></span>
@@ -39,7 +38,7 @@
             </li>
         </ul>
         <span class="find">
-            <a href="beprov.html"> Become Provider </a>
+            <a href="provider.html"> Become Provider </a>
         </span>
     </div>
 </header>
@@ -125,7 +124,7 @@
         <ul>
           <li><a href="about.html#about">About Us</a></li>
           <li><a href="#">Help & FAQs</a></li>
-          <li><a href="#">Blog</a></li>
+          <li><a href="blog.html">Blog</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
@@ -137,19 +136,19 @@
           <li><a href="#">Smart Watch Repair</a></li>
           <li><a href="#">Smartphone Repair</a></li>
           <li><a href="#">Laptop Repair</a></li>
-          <li><a href="#">Others..</a></li>
+          <li><a href="service.html">Others..</a></li>
         </ul>
       </div>
 
       <div class="footer-section">
         <h3>Contact Info</h3>
         <ul>
-          <li>📞 (69) 574-7548-027</li>
-          <li>📞 (89) 574-7548-027</li>
-          <li>📧 example@gmail.com</li>
-          <li>📧 support@fixpro.com</li>
-          <li>🏠 4537 Washington Ave.</li>
-          <li>🏙️ Manchester, 95</li>
+          <li>📞 (+977) 984-1789-457</li>
+          <li>📞 (01) 748-94-562</li>
+          <li>📧 kamparyo@gmail.com</li>
+          <li>📧 support@kamparyo.com</li>
+          <li>🏠 kathmandu, Nepal</li>
+          <li>🏙️ Kalanki, 14</li>
         </ul>
       </div>
 
@@ -168,7 +167,6 @@
   </footer>
 
   <script>
-     // Mobile menu toggle
     const hamburger = document.getElementById('hamburger');
     const mobileMenu = document.getElementById('mobileMenu');
     
@@ -176,7 +174,6 @@
         this.classList.toggle('active');
         mobileMenu.classList.toggle('active');
         
-        // Toggle body scroll when menu is open
         if (mobileMenu.classList.contains('active')) {
             document.body.style.overflow = 'hidden';
         } else {
@@ -184,7 +181,6 @@
         }
     });
     
-    // Close menu when clicking on a link
     const navLinks = document.querySelectorAll('.head-sec a');
     navLinks.forEach(link => {
         link.addEventListener('click', function() {

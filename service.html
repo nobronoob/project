@@ -8,13 +8,11 @@
 </head>
 <body>
      <section class="top" id="top">
-   <!-- <div class="wid"> -->
     <header class="navbar">
     <p>
-        <a href="index.html"> Project </a>
+        <a href="index.html#back"> Project </a>
     </p>
     
-    <!-- Hamburger menu icon -->
     <div class="hamburger" id="hamburger">
         <span></span>
         <span></span>
@@ -40,7 +38,7 @@
             </li>  
         </ul>
         <span class="find">
-            <a href="beprov.html"> Become Provider </a>
+            <a href="provider.html"> Become Provider </a>
         </span>
     </div>
 </header>
@@ -62,7 +60,6 @@
             <div class="item-right">
                  <span class="left-pic"> 
                     <img src="pic/plumber.png" alt="plumber">
-                    <!-- <p class="item-p">Plumber</p>  -->
                  </span>
                 <span class="service-plum">  
                     <h2> Expert Plumbing Services </h2>
@@ -80,7 +77,6 @@
            <div class="item-right">
              <span class="left-pic"> 
                 <img src="pic/electrician.png" alt="electrician">
-                <!-- <p class="item-p">Electrician</p>  -->
             </span>
                 <span class="service-plum">  
                     <h2>  Certified Electrical Solutions</h2>
@@ -97,8 +93,7 @@
    
         <div class="item-right">
             <span class="left-pic">
-                <img src="pic/electric-appliance.png" alt="plumber">
-                <!-- <p class="item-p">Plumber</p>  -->
+                <img src="pic/electric-appliance.png" alt="electric appliance">
             </span>
                 <span class="service-plum">  
                     <h2> Appliance Repair Experts </h2>
@@ -113,8 +108,7 @@
             </div>
         <div class="item-right">
             <span class="left-pic">
-                <img src="pic/technician.png" alt="plumber">
-                <!-- <p class="item-p">Plumber</p>  -->
+                <img src="pic/technician.png" alt="technician">
             </span>
                 <span class="service-plum">  
                     <h2>Laptop Repair By Expert</h2>
@@ -129,8 +123,7 @@
             </div>
         <div class="item-right">
             <span class="left-pic">
-                <img src="pic/anti-virus-software.png" alt="plumber">
-                <!-- <p class="item-p">Plumber</p>  -->
+                <img src="pic/anti-virus-software.png" alt="Anti-virus">
             </span>
                 <span class="service-plum">  
                     <h2 style="width: 300px; padding-left: 10px;"> Virus Shield Protection </h2>
@@ -147,16 +140,15 @@
 
         <div class="item-right">
             <span class="left-pic">
-                <img src="pic/technician.png" alt="plumber">
-                <!-- <p class="item-p">Plumber</p>  -->
+                <img src="pic/painter.png" alt="painter">
             </span>
                 <span class="service-plum">  
-                    <h2>Laptop Repair By Expert</h2>
-                        <p>Our technicians handle everything from simple part to malfunctioning laptop with fast turnaround.</p>
+                    <h2>Painting Services</h2>
+                        <p>Our technicians handle everything from simple touch-ups to complete home renovations with fast turnaround.</p>
                            <ul> 
                                 <li>✔ 24/7 emergency service</li>
-                                <li>✔ Wiring installations & upgrades</li>
-                                <li>✔ Lighting design & fixture installation</li>
+                                <li>✔ Interior & exterior painting</li>
+                                <li>✔ Wallpaper installation & removal</li>
                             </ul>
                              <a href=" "><button class="btn-item thir arrow">See More</button></a>
                 </span>
@@ -203,16 +195,15 @@
           <li><a href="#">Others..</a></li>
         </ul>
       </div>
-
       <div class="footer-section">
         <h3>Contact Info</h3>
         <ul>
-          <li>📞 (69) 574-7548-027</li>
-          <li>📞 (89) 574-7548-027</li>
-          <li>📧 example@gmail.com</li>
-          <li>📧 support@fixpro.com</li>
-          <li>🏠 4537 Washington Ave.</li>
-          <li>🏙️ Manchester, 95</li>
+          <li>📞 (+977) 984-1789-457</li>
+          <li>📞 (01) 748-94-562</li>
+          <li>📧 kamparyo@gmail.com</li>
+          <li>📧 support@kamparyo.com</li>
+          <li>🏠 kathmandu, Nepal</li>
+          <li>🏙️ Kalanki, 14</li>
         </ul>
       </div>
 
@@ -231,7 +222,6 @@
   </footer>
 
   <script>
-      // Mobile menu toggle
     const hamburger = document.getElementById('hamburger');
     const mobileMenu = document.getElementById('mobileMenu');
     
@@ -239,7 +229,6 @@
         this.classList.toggle('active');
         mobileMenu.classList.toggle('active');
         
-        // Toggle body scroll when menu is open
         if (mobileMenu.classList.contains('active')) {
             document.body.style.overflow = 'hidden';
         } else {
@@ -247,7 +236,6 @@
         }
     });
     
-    // Close menu when clicking on a link
     const navLinks = document.querySelectorAll('.head-sec a');
     navLinks.forEach(link => {
         link.addEventListener('click', function() {

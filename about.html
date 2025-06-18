@@ -45,7 +45,7 @@
 
             </ul>
             <span class="find">
-                <a href="beprov.html"> Become Provider </a>
+                <a href="provider.html"> Become Provider </a>
             </span>
         </div>
     </header>
@@ -61,7 +61,7 @@
             </nav>
         </div>
 
-        <!-- Page content would go here -->
+
     </div>
     
   <section class="hero-section" id="about">
@@ -177,7 +177,7 @@
         <ul>
           <li><a href="about.html#about">About Us</a></li>
           <li><a href="#">Help & FAQs</a></li>
-          <li><a href="#">Blog</a></li>
+          <li><a href="blog.html">Blog</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
@@ -189,19 +189,19 @@
           <li><a href="#">Smart Watch Repair</a></li>
           <li><a href="#">Smartphone Repair</a></li>
           <li><a href="#">Laptop Repair</a></li>
-          <li><a href="#">Others..</a></li>
+          <li><a href="service.html">Others..</a></li>
         </ul>
       </div>
 
       <div class="footer-section">
         <h3>Contact Info</h3>
         <ul>
-          <li>📞 (69) 574-7548-027</li>
-          <li>📞 (89) 574-7548-027</li>
-          <li>📧 example@gmail.com</li>
-          <li>📧 support@fixpro.com</li>
-          <li>🏠 4537 Washington Ave.</li>
-          <li>🏙️ Manchester, 95</li>
+          <li>📞 (+977) 984-1789-457</li>
+          <li>📞 (01) 748-94-562</li>
+          <li>📧 kamparyo@gmail.com</li>
+          <li>📧 support@kamparyo.com</li>
+          <li>🏠 kathmandu, Nepal</li>
+          <li>🏙️ Kalanki, 14</li>
         </ul>
       </div>
 
@@ -226,16 +226,14 @@
     hamburger.addEventListener('click', function() {
         this.classList.toggle('active');
         mobileMenu.classList.toggle('active');
-        
-        // Toggle body scroll when menu is open
+
         if (mobileMenu.classList.contains('active')) {
             document.body.style.overflow = 'hidden';
         } else {
             document.body.style.overflow = '';
         }
     });
-    
-    // Close menu when clicking on a link
+ 
     const navLinks = document.querySelectorAll('.head-sec a');
     navLinks.forEach(link => {
         link.addEventListener('click', function() {

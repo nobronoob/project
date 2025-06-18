@@ -7,7 +7,9 @@ html{
     scroll-behavior: smooth;
     scroll-padding-top: 90px;
 }
-
+.name{
+    display: flex;
+}
 .navbar{
     width: 99%;
     height: 100%;
@@ -42,7 +44,7 @@ html{
 .head-sec{
     /* margin-top: 10px; */
     display: flex;
-    margin-left: 25%;
+    margin-left: 20%;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -86,7 +88,7 @@ html{
     background: rgb(151, 121, 65);
 }
 
-/* Header/Navbar Media Queries */
+
 @media (max-width: 1200px) {
     .navbar {
         margin-bottom: 80px;
@@ -138,8 +140,7 @@ html{
         font-size: 1.3rem;
         padding-top: 12px;
     }
-    
-    /* Hamburger menu styles */
+
     .hamburger {
         display: block;
     }
@@ -193,7 +194,7 @@ html{
         padding: 12px 10px;
     }
     
-    /* Hamburger animation */
+
     .hamburger.active span:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
     }
@@ -236,7 +237,7 @@ html{
     }
 }
 
-/* Additional small screen adjustments */
+
 @media (max-width: 400px) {
     .head-sec {
         width: 85%;
@@ -246,7 +247,7 @@ html{
         font-size: 1.1rem;
     }
 }
-/* Hamburger menu styles */
+
 .hamburger {
     display: none;
     cursor: pointer;
@@ -265,7 +266,7 @@ html{
     transition: all 0.3s ease;
 }
 
-/* Mobile menu styles */
+
 @media (max-width: 768px) {
     .hamburger {
         display: block;
@@ -316,12 +317,11 @@ html{
         display: none;
     }
     
-    /* Show mobile-only links when menu is active */
     .head-sec.active .mobile-only {
         display: block;
     }
     
-    /* Hamburger animation */
+
     .hamburger.active span:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
     }
@@ -490,7 +490,7 @@ cursor: pointer;
     text-decoration: none;
     color: white;
 }
-/* Content Section Media Queries */
+
 @media (max-width: 1200px) {
     .content {
         margin-top: 150px;
@@ -685,7 +685,7 @@ cursor: pointer;
     margin-left: 40px;
 }
 .top-rate {
-    position: relative; /* Change from absolute to relative */
+    position: relative; 
     display: flex;
     align-items: center;
     margin-left: 40px;
@@ -818,7 +818,7 @@ cursor: pointer;
     display: flex;
     margin-left: 10px;
 }
-/* About/Reviews Section Media Queries */
+
 @media (max-width: 1200px) {
     .review-up {
         margin-left: 30px;
@@ -973,7 +973,7 @@ cursor: pointer;
         margin-left: 15px;
     }
     .review-ls span img {
-    /* Remove position: absolute and related properties */
+    
     width: 127px;
     height: 123px;
     margin-left: 10px;
@@ -1098,7 +1098,7 @@ margin-left: 30%;
 .footer-bot a:hover {
   text-decoration: underline;
 }
-/* Footer Media Queries */
+
 @media (max-width: 992px) {
     .footer-container {
         grid-template-columns: repeat(2, 1fr);
@@ -1168,7 +1168,6 @@ margin-left: 30%;
     }
 }
 
-/* Blur effect and overlay styling */
 .overlay {
     position: fixed;
     top: 0;
@@ -1181,7 +1180,7 @@ margin-left: 30%;
     justify-content: center;
     align-items: center;
     z-index: 10;
-    display: none; /* Hidden by default */
+    display: none; 
 }
 
 .login-message {
@@ -1211,7 +1210,7 @@ margin-left: 30%;
 }
 
 body.blurred {
-    overflow: hidden; /* Prevent scrolling when overlay is visible */
+    overflow: hidden; 
 }
 
 #new{
