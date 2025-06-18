@@ -247,23 +247,22 @@ margin-left: 30%;
     font-size: 1.1rem;
     margin-top: 20px;
 }
-/* Main Container */
+
 .service-page-container {
   display: flex;
   gap: 30px;
   max-width: 1200px;
-  margin: 0 auto;
+  margin-left: 90px;
   padding: 20px;
   position: relative;
 }
 
-/* Main Content Section */
 .service-main-content {
   flex: 1;
   max-width: 800px;
 }
 
-/* FAQ Section */
+
 .faq-section {
   margin-bottom: 40px;
 }
@@ -289,13 +288,15 @@ margin-left: 30%;
   line-height: 1.6;
 }
 
-/* Reviews Section */
+
 .reviews-section {
   margin-bottom: 40px;
+  width: 620px;
+  height: 180px;
 }
 
 .reviews-section h2 {
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   margin-bottom: 20px;
   color: #333;
 }
@@ -343,7 +344,9 @@ margin-left: 30%;
 
 /* Sticky Booking Sidebar */
 .sticky-booking-sidebar {
-  width: 350px;
+  width: 400px;
+  margin-top: 20px;
+  margin-left: 60px;
   position: relative;
 }
 
