@@ -25,7 +25,14 @@
 
             <div class="form-group">
                 <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" placeholder="Enter your phone number" required />
+                <div class="pho-code">
+                 <select id="country-code" style="width: 110px; margin-right: 10px;">
+                        <option value="+977" selected>+977</option>
+                        <option value="+91">+91</option>
+                        <option value="+1">+1</option>
+                 </select>
+                <input type="tel" id="phone" placeholder="98XXXXXXXX"  maxlength="10" oninput="this.value=this.value.replace(/[^0-9]/g,'')" pattern="[0-9]{10}" title="Only 10-digit numbers allowed (e.g., 9841234567)" required >
+                </div>
             </div>
 
             <div class="form-group">
