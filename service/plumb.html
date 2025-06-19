@@ -18,23 +18,23 @@
                 </li>
 
                 <li>
-                    <a href="#Work"> How It Works </a>
+                    <a href="../index.html#Work"> How It Works </a>
                 </li>
                 
                 <li>
-                    <a href="about.html"> About US </a>
+                    <a href="../about.html"> About US </a>
                 </li>
                 
                 <li>
-                    <a href="blog.html"> Blogs </a>
+                    <a href="../blog.html"> Blogs </a>
                 </li>
                 
                 <li>
-                    <a href="login.html"> Login </a>
+                    <a href="../login.html"> Login </a>
                 </li>
             </ul>
             <span class="find">
-                <a href="beprov.html"> Become Provider </a>
+                <a href="../beprov.html"> Become Provider </a>
             </span>
         </div>
     </header>
@@ -244,28 +244,6 @@
       </div>
     </div>
   </footer>
-
-  <script>
-       document.addEventListener('DOMContentLoaded', function() {
- 
-            const buttons = document.querySelectorAll('#new');
-            const overlay = document.getElementById('loginOverlay');
-            
-
-            buttons.forEach(button => {
-       
-                if (!button.closest('.overlay')) {
-                    button.addEventListener('click', function(e) {
-                    
-                        e.preventDefault();
-                        
-                     
-                        overlay.style.display = 'flex';
-                        document.body.classList.add('blurred');
-                    });
-                }
-            });
-        });
-  </script>
+ <script src="serv.js"></script>
 </body>
 </html>
