@@ -2,12 +2,9 @@
     margin: 0px;
     padding: 0px;
 }
-.navbar{
-    width: 99%;
-    margin-left: 10px;
-    margin-top: 5px;
+/* .navbar{
+    width: 100%;
     background: #2c3e50;
-    border-radius: 10px;
     position: sticky;
     top: 0%;
     z-index: 1;
@@ -238,7 +235,7 @@
     .navbar p {
         font-size: 1.1rem;
     }
-}
+} 
 .hamburger {
     display: none;
     cursor: pointer;
@@ -323,7 +320,7 @@
         transform: rotate(-45deg) translate(7px, -6px);
     }
 }
-
+*/
 .container {
     width: 97.3%;
     height: 350px;
