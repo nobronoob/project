@@ -1,7 +1,6 @@
 *{
-    margin: 0;
+    margin: 0px;
     padding: 0;
-    box-sizing: border-box;
 }
 .how-it-works-alt {
     padding: 100px 20px;
@@ -127,30 +126,27 @@
     }
 }
 
-
 .container {
-    width: 97.3%;
+    width: 100%;
     height: 350px;
-    margin-top: -50px;
-    margin-bottom: 10px;
+    margin-top: -68px;
     padding-left: 20px;
+    padding-bottom: 7px;
     padding-top: 20px;
-    padding-bottom: 20px;
     padding-right: 20px;
     background: #a8bacc;
     position: relative;
-    top: -32px; 
     border-radius: 10px;     
 }
  .breadcrumb {
      padding: 50px 0px;
      margin-bottom: 30px;
-     margin-left: 120px;
+     margin-left: 100px;
      background-color: transparent;
      z-index: 1;
 }
  .breadcrumb-title {
-     font-size: 2.5rem;
+     font-size: 2.4rem;
      font-weight: 600;
      color: #2c3e50;
      margin-top: 90px;

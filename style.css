@@ -559,7 +559,7 @@ padding-left: 200px;
     display: grid;
     line-height: 10px;
     font-size: 1.1rem;
-    margin-left: 15px;
+    padding-left: 15px;
     margin-right: 100px;
 }
 #days{
@@ -602,7 +602,7 @@ padding-left: 200px;
     margin-left: 10px;
 }
 
-/* About Section Media Queries */
+
 @media (max-width: 1200px) {
     .review {
         grid-template-columns: 1fr;
@@ -695,7 +695,10 @@ padding-left: 200px;
         margin-left: 10px;
         margin-right: 10px;
     }
-    
+    .review-list{
+        margin-left: -20px;
+        width: 280px;
+    }
     .review-p {
         font-size: 1.6rem;
         width: 300px;
@@ -728,12 +731,12 @@ padding-left: 200px;
     .google {
         width: 20px;
         height: 20px;
+        margin-left: -20px;
     }
     .top-rate{
         margin-top: -30px;
     }
 }
-
 
 .overlay {
     position: fixed;
