@@ -112,6 +112,7 @@ html{
     .breadcrumb {
         margin-left: 40px;
         padding: 40px 0;
+        margin-right: -500px;
     }
     
     .breadcrumb-title {
@@ -320,11 +321,11 @@ html{
     }
     
     .item-right {
-        width: 380px;
+        width: 350px;
     }
     
     .left-pic {
-        left: 120px;
+        left: 90px;
     }
 }
 
@@ -380,7 +381,7 @@ html{
     }
     
     .item-right {
-        width: 100%;
+        width: 320px;
         height: auto;
         padding: 20px 15px;
         margin: 10px 0;

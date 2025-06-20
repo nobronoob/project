@@ -7,7 +7,7 @@ html{
     scroll-behavior: smooth;
     scroll-padding-top: 90px;
 }
-
+/* 
 .navbar{
     width: 100%;
     margin-bottom: 30px;
@@ -34,9 +34,15 @@ html{
     color: white;
     text-decoration: none;
 }
-
+.logo{
+    margin: 5px;
+    position: relative;
+}
+.logo-icon{
+    width: 120px;
+    height: 30px;
+}
 .head-sec{
-    /* margin-top: 10px; */
     display: flex;
     margin-left: 25%;
     padding-top: 20px;
@@ -80,7 +86,114 @@ html{
     padding: 10px 15px;
     border-radius: 5px;
     background: rgb(151, 121, 65);
+} */
+
+.navbar {
+    width: 100%;
+    background: #097cf05f;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-sizing: border-box;
 }
+
+.logo{
+    margin: 5px;
+    position: relative;
+}
+.logo-icon{
+    width: 120px;
+    height: 30px;
+}
+.navbar p {
+    font-size: 1.8rem;
+    color: white;
+    margin: 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.navbar p a:hover {
+    transform: scale(1.05);
+}
+
+.head-sec {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 45px;
+}
+
+.list a {
+    font-size: 1.3rem;
+    position: relative;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+.list a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2.5px;
+    bottom: 0;
+    left: 0;
+    background: white;
+    display: block;
+    transition: width 0.4s ease;
+}
+
+.list a:hover::after {
+    width: 100%;
+}
+
+.find a {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: rgb(151, 121, 65);
+    transition: background-color 0.3s ease;
+}
+
+.find a:hover {
+    background: rgb(171, 141, 85);
+}
+
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 100;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
 
 @media (max-width: 1200px) {
     .navbar {
@@ -240,25 +353,6 @@ html{
         font-size: 1.1rem;
     }
 }
-
-.hamburger {
-    display: none;
-    cursor: pointer;
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    z-index: 100;
-}
-
-.hamburger span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px 0;
-    background-color: white;
-    transition: all 0.3s ease;
-}
-
 
 @media (max-width: 768px) {
     .hamburger {
@@ -502,6 +596,7 @@ margin-left: 30%;
 main{
   padding-left: 50px;
   padding-right: 50px;
+  padding-top: 40px;
 }
 .top{
     display: flex;

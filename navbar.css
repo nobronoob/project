@@ -1,6 +1,10 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
 .navbar {
     width: 100%;
-    background: #2c3e50;
+    background: #097cf05f;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -10,9 +14,14 @@
     padding: 15px 30px;
     box-sizing: border-box;
 }
+
 .logo{
-    width: 100px;
-    display: flex;
+    margin: 5px;
+    position: relative;
+}
+.logo-icon{
+    width: 120px;
+    height: 30px;
 }
 .navbar p {
     font-size: 1.8rem;
@@ -104,6 +113,7 @@
 @media (max-width: 768px) {
     .navbar {
         padding: 15px 20px;
+
     }
     
     .hamburger {
@@ -119,6 +129,7 @@
         height: 100vh;
         background: #2c3e50;
         flex-direction: column;
+        margin-top: -200px;
         align-items: center;
         justify-content: center;
         gap: 40px;
