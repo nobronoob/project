@@ -5,22 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Repair & Installing Company</title>
   <link rel="stylesheet" href="about.css" />
+  <link rel="stylesheet" href="navbar.css" />
+  <link rel="stylesheet" href="footer.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <section class="top">
      <header class="navbar">
         <p>
-            <a href="index.html#back"> Project </a>
+            <a href="index.html#Back"> Project </a>
         </p>
-        <div class="head-sec">
-            <ul class="list">
+
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    
+    <div class="head-sec" id="mobileMenu">
+        <ul class="list">
                 <li>
-                    <a href="index.html#service"> Service </a>
+                    <a href="service.html"> Services </a>
                 </li>
 
                 <li>
-                    <a href="#Work"> How It Works </a>
+                    <a href="how-work.html"> How It Works </a>
                 </li>
                 
                 <li>
@@ -33,11 +42,12 @@
 
             </ul>
             <span class="find">
-                <a href="beprov.html"> Become Provider </a>
+                <a href="provider.html"> Become Provider </a>
             </span>
         </div>
     </header>
     </section>
+
     <div class="container">
         <div class="breadcrumb">
             <h1 class="breadcrumb-title">About</h1>
@@ -47,8 +57,6 @@
                 <span class="breadcrumb-current">ABOUT</span>
             </nav>
         </div>
-
-        <!-- Page content would go here -->
     </div>
     
   <section class="hero-section" id="about">
@@ -164,7 +172,7 @@
         <ul>
           <li><a href="about.html#about">About Us</a></li>
           <li><a href="#">Help & FAQs</a></li>
-          <li><a href="#">Blog</a></li>
+          <li><a href="blog.html">Blog</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
@@ -176,19 +184,19 @@
           <li><a href="#">Smart Watch Repair</a></li>
           <li><a href="#">Smartphone Repair</a></li>
           <li><a href="#">Laptop Repair</a></li>
-          <li><a href="#">Others..</a></li>
+          <li><a href="service.html">Others..</a></li>
         </ul>
       </div>
 
       <div class="footer-section">
         <h3>Contact Info</h3>
         <ul>
-          <li>📞 (69) 574-7548-027</li>
-          <li>📞 (89) 574-7548-027</li>
-          <li>📧 example@gmail.com</li>
-          <li>📧 support@fixpro.com</li>
-          <li>🏠 4537 Washington Ave.</li>
-          <li>🏙️ Manchester, 95</li>
+          <li>📞 (+977) 984-1789-457</li>
+          <li>📞 (01) 748-94-562</li>
+          <li>📧 kamparyo@gmail.com</li>
+          <li>📧 support@kamparyo.com</li>
+          <li>🏠 kathmandu, Nepal</li>
+          <li>🏙️ Kalanki, 14</li>
         </ul>
       </div>
 
@@ -206,5 +214,31 @@
     </div>
   </footer>
 
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    
+    hamburger.addEventListener('click', function() {
+        this.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+
+        if (mobileMenu.classList.contains('active')) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = '';
+        }
+    });
+ 
+    const navLinks = document.querySelectorAll('.head-sec a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            if (window.innerWidth <= 768) {
+                hamburger.classList.remove('active');
+                mobileMenu.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+    });
+  </script>
 </body>
 </html>

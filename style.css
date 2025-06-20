@@ -62,14 +62,14 @@ cursor: pointer;
 }
 
 #new{
-padding: 15px 45px 15px 45px ;
-font-size: 1.2rem;
-border-radius: 18px;
-margin-top: 20px;
-background: rgb(241, 200, 124);
-border: 1px solid transparent;
-cursor: pointer;
-color: white;
+    padding: 15px 45px 15px 45px ;
+    font-size: 1.2rem;
+    border-radius: 18px;
+    margin-top: 20px;
+    background: rgb(241, 200, 124);
+    border: 1px solid transparent;
+    cursor: pointer;
+    color: white;
 }
 #new:hover{
     transform: scaleY(1.01);
@@ -215,13 +215,13 @@ color: white;
     border: none;
     cursor: pointer;
     margin-bottom: 50px;
-    transition: all 0.3s ease; 
 }
 
 .btn:hover {
     background-color: #0056b3;  
     transform: translateY(-3px); 
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
+    transition: all 0.3s ease; 
 }
 .arrow::after{
     content: '→';
