@@ -18,3 +18,14 @@
                 }
             });
         });
+
+        let dateVal = document.querySelectorAll('.dat');
+        
+        dateVal.forEach(date => {
+  date.addEventListener('click', function() {
+    // Remove selected class from all dates
+    document.querySelectorAll('.dat').forEach(d => d.classList.remove('selected'));
+    // Add selected class to clicked date
+    this.classList.add('selected');
+  });
+});
