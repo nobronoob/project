@@ -13,8 +13,9 @@
  
     <header class="navbar">
     <div class="logo">
-        <a href="#Back" class="name"> <p>Project</p>
-            <!-- <p style="">paryo</p> --> </a>
+        <a href="#Back">
+            <img src="../pic/kaamParyolongplain.png" alt="icon" class="logo-icon">
+        </a>
     </div>
     
     <div class="hamburger" id="hamburger">
@@ -61,13 +62,13 @@
 <div>
     <button id="new"> Book Now </button>
 
-    <div class="overlay" id="loginOverlay">
+    <!-- <div class="overlay" id="loginOverlay">
         <div class="login-message">
             <h2>Please login first</h2>
             <p>You need to be logged in to perform this action</p>
             <button onclick="document.getElementById('loginOverlay').style.display='none'; document.body.classList.remove('blurred')">Close</button>
         </div>
-    </div>
+    </div> -->
 
 </div>
   </div>
@@ -111,23 +112,6 @@
                 </span>
                  
             </div>
-   
-        <!-- <div class="item-right">
-            <span class="left-pic">
-                <img src="pic/electric-appliance.png" alt="plumber">
-
-            </span>
-                <span class="service-plum">  
-                    <h2>Appliance Repair Experts</h2>
-                        <p>Our technicians handle everything from broken fridges to malfunctioning washing machines with fast turnaround..</p>
-                           <ul> 
-                                <li>✔ 24/7 emergency service</li>
-                                <li>✔ Wiring installations & upgrades</li>
-                                <li>✔ Lighting design & fixture installation</li>
-                            </ul>
-                             <a href="service/appliance.html"><button class="btn-item thir arrow">Find Worker</button></a>
-                </span>
-            </div> -->
 
         <div class="item-right">
             <span class="left-pic">
@@ -285,7 +269,7 @@
     <div class="footer-container">
       
       <div class="footer-brand">
-        <h1>Project</h1>
+        <h1>Kam Paryo</h1>
         <p>Delivering professional repair services with reliability and care. Your devices, our priority.</p>
       
         <div class="footer-section">
@@ -337,7 +321,7 @@
 
     <div class="divider"></div>
     <div class="footer-bot">
-        <p>© 2025 Project. All rights reserved.</p>
+        <p>© 2025 Kam Paryo. All rights reserved.</p>
         <div class="footer-link">
             <a href="#">Support</a>
             <a href="#">Terms & Conditions</a>
@@ -347,27 +331,6 @@
   </footer>
   <script>
       
-        document.addEventListener('DOMContentLoaded', function() {
- 
-            const buttons = document.querySelectorAll('#new');
-            const overlay = document.getElementById('loginOverlay');
-            
-
-            buttons.forEach(button => {
-       
-                if (!button.closest('.overlay')) {
-                    button.addEventListener('click', function(e) {
-                    
-                        e.preventDefault();
-                        
-                     
-                        overlay.style.display = 'flex';
-                        document.body.classList.add('blurred');
-                    });
-                }
-            });
-        });
-    
 
     const hamburger = document.getElementById('hamburger');
     const mobileMenu = document.getElementById('mobileMenu');

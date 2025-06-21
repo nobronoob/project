@@ -10,9 +10,14 @@
     padding: 15px 30px;
     box-sizing: border-box;
 }
+
 .logo{
-    width: 100px;
-    display: flex;
+    margin: 5px;
+    position: relative;
+}
+.logo-icon{
+    width: 120px;
+    height: 30px;
 }
 .navbar p {
     font-size: 1.8rem;
