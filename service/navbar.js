@@ -23,9 +23,15 @@
         
         dateVal.forEach(date => {
   date.addEventListener('click', function() {
-    // Remove selected class from all dates
     document.querySelectorAll('.dat').forEach(d => d.classList.remove('selected'));
-    // Add selected class to clicked date
     this.classList.add('selected');
   });
 });
+
+    const timeSlots = document.querySelectorAll('.time-slots button');
+    timeSlots.forEach(slot => {
+        slot.addEventListener('click', function() {
+            timeSlots.forEach(btn => btn.classList.remove('selected'));
+            this.classList.add('selected');
+        });
+    });

@@ -4,10 +4,10 @@
 }
 .navbar {
     width: 100%;
-    background: #097cf05f;
+    background: #00aeff;
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
