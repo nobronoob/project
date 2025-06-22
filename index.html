@@ -6,11 +6,18 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,674;1,674&display=swap" rel="stylesheet">
     <title>Main Page</title>
+    <link rel="shortcut icon" href="pic/favicon.png" type="image/x-icon">
 </head>
 <body id="Back">
- 
+
+<div class="image">
+
     <header class="navbar">
     <div class="logo">
         <a href="#Back">
@@ -38,49 +45,60 @@
             <li>
                 <a href="blog.html"> Blogs </a>
             </li>
-            <li>
-                <a href="login.html"> Login </a>
-            </li>
+           
+            
         </ul>
-        <span class="find">
+        <!-- <span class="find">
             <a href="provider.html"> Become Provider </a>
-        </span>
+        </span> -->
     </div>
+
+    <div class="login-container">
+            <p class="login-btn"> JOIN</p>
+        <div class="login-dropdown">
+            <a href="login.html" class="login-option">Customer Login</a>
+            <a href="provider.html" class="login-option">Provider Login</a>
+        </div>
+    </div>   
 </header>
 
-    <div class="content">
-        <div class="title-head">
-            <p class="title">
-                Reliable Services, Right at
-            </p>
-            <p class="title">
-                Your Doorstep!
-            </p>
-        </div>
-        
-        <div class="srh-btn">
-            <input type="text" placeholder="Search for Services...">
-            <img src="pic/search-icon.png" alt="search icon">
-        </div>
-<div>
-    <button id="new"> Book Now </button>
 
-    <div class="overlay" id="loginOverlay">
-            <div class="login-message">
-                          <div class="exist">
+    <div class="content">
+        
+         <div class="title-1st">
+            <p class="title-para">Same-Day Experts Near You
+                </p>
+        </div>
+
+        <div class="title-2nd">
+            <h3 class="title">
+                Trusted professionals at your doorstep. Book any service in minutes - fast, easy, and reliable
+            </h3>
+            <!-- <h3 class="title">
+                Your Doorstep!
+            </h3> -->
+        </div>
+       
+        <div>
+            <button id="new"> Book Now </button>
+
+            <div class="overlay" id="loginOverlay">
+                    <div class="login-message">
+                        <div class="exist">
                             <p onclick="document.getElementById('loginOverlay').style.display='none'; document.body.classList.remove('blurred')"></p>
-                          </div>
-                            <div class="pop">
-                              <h2>Please login first</h2>
-                              <p class="pop-head">You need to be logged in to perform this action</p>
-                              <a href="../login.html"><p class="pop-p">Login In</p></a>
-                            </div>
                         </div>
+                        <div class="pop">
+                            <h2>Please login first</h2>
+                            <p class="pop-head">You need to be logged in to perform this action</p>
+                            <a href="login.html"><p class="pop-p">Login In</p></a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
     </div>
 
 </div>
-  </div>
-
 <main>
     <div class="part1" id="service">
         <p class="part1-title">Our Services</p>
@@ -120,23 +138,7 @@
                 </span>
                  
             </div>
-   
-        <!-- <div class="item-right">
-            <span class="left-pic">
-                <img src="pic/electric-appliance.png" alt="plumber">
 
-            </span>
-                <span class="service-plum">  
-                    <h2>Appliance Repair Experts</h2>
-                        <p>Our technicians handle everything from broken fridges to malfunctioning washing machines with fast turnaround..</p>
-                           <ul> 
-                                <li>✔ 24/7 emergency service</li>
-                                <li>✔ Wiring installations & upgrades</li>
-                                <li>✔ Lighting design & fixture installation</li>
-                            </ul>
-                             <a href="service/appliance.html"><button class="btn-item thir arrow">Find Worker</button></a>
-                </span>
-            </div> -->
 
         <div class="item-right">
             <span class="left-pic">
@@ -322,7 +324,7 @@
       <div class="footer-section">
         <h3>Our Services</h3>
         <ul>
-          <li><a href="service/appliance">Electric Repair</a></li>
+          <li><a href="service/appliance.html">Electric Repair</a></li>
           <li><a href="service/plumb.html">Plumbing Solution</a></li>
           <li><a href="service/painting.html">Painting Solution</a></li>
           <li><a href="service/laptop.html">Laptop Repair</a></li>

@@ -17,54 +17,48 @@ main{
     padding-top: 50px;
 }
 .content{
-    text-align: center;
-    margin-top: 200px;
-    margin-bottom: 150px;
+    padding-top:220px;
+    margin-left: 10%;
+    /* padding-: 200px; */
+}
+.image{
+    background-image: url('pic/bg.png');
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+    background-repeat: no-repeat;
+}
+        
+.title-1st{
+    margin-top: -20px;
+    width: 550PX;
+}
+
+.title-para{
+  font-family: "Headland One", serif;
+  font-size: 2.869rem;
+  font-weight: 500;
+  color: #191919;
+}
+
+.title-2nd{
+    margin-top: -30px;
+    width: 600px;
 }
 .title{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 3rem;
-    margin-top: 70px;
-    line-height: 1rem;
-}
-
-.srh-btn{
-margin-top: 50px;
-justify-content: center;
-display: flex;
-cursor: pointer;
-}
-
-.srh-btn input{
-    width: 570px;
-    height: 54.1px;
-    border: 0.1px solid rgba(0, 0, 0, 0.204);
-    border-top-left-radius: 7px;
-    border-bottom-left-radius: 7px;
-    padding-left: 20px;
-    font-size: 1.2rem;
-    display: inline-block;
-
-}
-.srh-btn img{
-    width: 30px;
-    height: 30px;
-    border: 0.1px solid rgba(0, 0, 0, 0.204);
-    padding: 12.3px;
-    border-top-right-radius: 7px;
-    border-bottom-right-radius: 7px;
-    display: inline-block;
-}
-.srh-btn input:hover, .srh-btn img:hover{
-    transform: scaleZ(1.0001);
-    display: inline-block;
-    transition: all 0.1s;
+    font-size: 1.4rem;
+    margin-top: 50px;
+    font-family: "Inter", sans-serif;
+    font-weight: 215;
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
 
 #new{
     padding: 15px 45px 15px 45px ;
+    text-align: center;
     font-size: 1.2rem;
-    border-radius: 18px;
+    border-radius: 8px;
     margin-top: 20px;
     background: rgb(241, 200, 124);
     border: 1px solid transparent;
@@ -781,15 +775,14 @@ padding-left: 200px;
 .exist{
     position: relative;
     top: -30px;
-    padding-left: 100%;
+    padding-left: 102%;
 }
 .exist p::after{
     content: 'x';
-    color: red;
-    font-size: 2rem;
+    color: #525457;
+    font-size: 1.45rem;
     cursor: pointer;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
-
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .pop{
     margin-top: -10px;

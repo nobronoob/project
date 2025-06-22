@@ -19,6 +19,7 @@ body {
 }
 #login-form{
     height: 400px;
+    
 }
 .form-title {
     text-align: center;
@@ -196,6 +197,8 @@ input:focus {
         padding: 8px 6px !important;
     }
 }
+
+
 
 form{
     position: relative;
