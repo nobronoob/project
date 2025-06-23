@@ -27,7 +27,7 @@ main{
     height: 700px;
     padding-top: 5px;
     background-repeat: no-repeat;
-    filter: blur(0.5px);
+
 }
         
 .title-1st{
@@ -36,9 +36,10 @@ main{
 }
 
 .title-para{
-  font-family: "Headland One", serif;
+  font-weight: 800;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 4rem;
-  font-weight: 900;
+  /* font-weight: 900; */
   color: #36454F;
 }
 
@@ -48,11 +49,11 @@ main{
 }
 .title{
     font-style: italic;
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     margin-top: 50px;
     color: #36454F;
     font-family: "Inter", sans-serif;
-    font-weight: 180;
+    font-weight: 212;
     padding-top: 0px;
     padding-bottom: 0px;
 }
@@ -63,14 +64,18 @@ main{
     font-size: 1.2rem;
     border-radius: 8px;
     margin-top: 20px;
-    background: rgb(241, 200, 124);
+    /* background: rgb(241, 200, 124); */
+    background: #525457;
     border: 1px solid transparent;
     cursor: pointer;
     color: white;
 }
 #new:hover{
-    transform: scaleY(1.01);
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
     transition: all .5s;
+    border: 1px solid transparent;
+    display: inline-block;
 }
 
 .part1-title{

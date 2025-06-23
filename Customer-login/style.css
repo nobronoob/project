@@ -17,17 +17,44 @@ main{
     padding-top: 50px;
 }
 .content{
-    text-align: center;
-    margin-top: 200px;
-    margin-bottom: 150px;
+   padding-top:220px;
+    margin-left: 10%;
 }
-.title{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 3rem;
-    margin-top: 70px;
-    line-height: 1rem;
+.image{
+    background-image: url('../pic/bg.png');
+    background-size: contain;
+    width: 100%;
+    height: 700px;
+    padding-top: 5px;
+    background-repeat: no-repeat;
+}
+        
+.title-1st{
+    margin-top: -20px;
+    width: 550px;
 }
 
+.title-para{
+  font-family: "Headland One", serif;
+  font-size: 4rem;
+  font-weight: 900;
+  color: #36454F;
+}
+
+.title-2nd{
+    margin-top: -30px;
+    width: 500px;
+}
+.title{
+    font-style: italic;
+    font-size: 1.8rem;
+    margin-top: 50px;
+    color: #36454F;
+    font-family: "Inter", sans-serif;
+    font-weight: 180;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
 .srh-btn{
 margin-top: 50px;
 justify-content: center;
@@ -99,8 +126,9 @@ cursor: pointer;
 
 #new{
     padding: 15px 45px 15px 45px ;
+    text-align: center;
     font-size: 1.2rem;
-    border-radius: 18px;
+    border-radius: 8px;
     margin-top: 20px;
     background: rgb(241, 200, 124);
     border: 1px solid transparent;

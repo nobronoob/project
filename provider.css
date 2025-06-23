@@ -244,13 +244,7 @@ input:focus {
     padding-bottom: 10px;
     display: flex;
 }
- /* .form-footer a {
-    color: #4a90e2;
-    text-decoration: none;
-} 
-.form-footer a:hover {
-    text-decoration: underline;
-} */
+
 .hidden {
     display: none;
 }

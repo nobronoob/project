@@ -9,8 +9,31 @@
 </head>
 
 <body>
+<input type="checkbox" id="form-toggle" hidden>
+  <div id="login-form">
+    <h2 class="form-title">Login</h2>
+    <form>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+      </div>
 
-    <div class="form-container">
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password" required>
+      </div>
+
+      <button type="submit" class="btn">Login</button>
+
+      <div class="form-sign">
+        Don't have an account?
+        <label for="form-toggle" class="switch-link">Sign up</label>
+      </div>
+    </form>
+  </div>
+
+
+    <div class="form-container" id="signup-form">
         <h2>Become a service provider</h2>
         <form>
             <div class="form-group">
@@ -76,6 +99,10 @@
             </div>
 
             <button type="submit">Submit Application</button>
+             <div class="form-login log">
+            Already have an account?
+            <label for="form-toggle" class="switch-link login">Login</label>
+            </div>
         </form>
     </div>
 
