@@ -240,12 +240,13 @@ main{
     padding: 20px;
 } 
 .left-pic{
-    /* text-align: center;   */
+  
     position: relative;
     left: 100px;
     margin-top: 20px;
 }
 .item-right{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     border: 1px solid transparent;
     border-radius: 18px;
     background: var(--light-color);
@@ -265,6 +266,7 @@ main{
 }
 
 .item-right img{
+    
     width: 100px;
     height: 100px;
     margin-top: 15px;
