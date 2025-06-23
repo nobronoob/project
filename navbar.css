@@ -4,16 +4,17 @@
 }
 .navbar {
     width: 100%;
-    background: #fd3431d4;
+    height: 100%;
+    background: #7e6d6d;
     position: sticky;
     top: 0;
     z-index: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 100px 15px 100px;
+    padding: 15px 160px 15px 120px;
     box-sizing: border-box;
-
+    opacity: 0.99;
 }
 
 .logo{
@@ -25,11 +26,6 @@
     width: 120px;
     height: 30px;
 }
-/* .navbar p {
-    font-size: 1.8rem;
-    color: white;
-    margin: 0;
-} */
 
 .navbar a {
     color: white;
@@ -166,7 +162,7 @@
     position: relative;
     display: inline-block;
     font-family: Arial, sans-serif;
-    margin-right: 90px;
+    /* margin-right: 80px; */
 }
 
 .login-btn {

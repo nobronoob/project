@@ -19,39 +19,42 @@ main{
 .content{
     padding-top:220px;
     margin-left: 10%;
-    /* padding-: 200px; */
 }
 .image{
     background-image: url('pic/bg.png');
-    background-size: cover;
+    background-size: contain;
     width: 100%;
     height: 700px;
+    padding-top: 5px;
     background-repeat: no-repeat;
+    filter: blur(0.5px);
 }
         
 .title-1st{
     margin-top: -20px;
-    width: 550PX;
+    width: 550px;
 }
 
 .title-para{
   font-family: "Headland One", serif;
-  font-size: 2.869rem;
-  font-weight: 500;
-  color: #191919;
+  font-size: 4rem;
+  font-weight: 900;
+  color: #36454F;
 }
 
 .title-2nd{
     margin-top: -30px;
-    width: 600px;
+    width: 500px;
 }
 .title{
-    font-size: 1.4rem;
+    font-style: italic;
+    font-size: 1.8rem;
     margin-top: 50px;
+    color: #36454F;
     font-family: "Inter", sans-serif;
-    font-weight: 215;
-    padding-top: 10px;
-    padding-bottom: 20px;
+    font-weight: 180;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 #new{
