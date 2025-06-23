@@ -137,7 +137,6 @@ cursor: pointer;
     display: inline-block;
 }
 
-
 @media (max-width: 1200px) {
     .image {
         height: 550px;
@@ -253,7 +252,6 @@ cursor: pointer;
     }
 }
 
-
 @media (max-width: 400px) {
     .image {
         height: 350px;
@@ -269,13 +267,12 @@ cursor: pointer;
         position: relative;
         top: -20px;
         line-height: 50px;
-        
     }
-    .title-para{
+    
+    .title-para {
         position: relative;
         top: -50px;
     }
-
 }
 
 .part1-title{
