@@ -324,13 +324,16 @@ main{
     display: inline-block;
     transform: translateY(1.009);
 }
+.sec{
+    margin-top: 35px;
+}
 .fir{
     margin-top: 16.5px;
     display: inline-block;
     cursor: pointer;
 }
 .thir{
-    margin-top: 31px;
+    margin-top: 17px;
     cursor: pointer;
     display: inline-block;
 }
@@ -353,6 +356,7 @@ main{
     display: inline-block;
     text-align: center;
     background-color: #007BFF; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #ffffff;   
     padding: 12px 30px;        
     border-radius: 50px;       
@@ -496,7 +500,13 @@ main{
     }
     
     .title {
-        font-size: 1.8rem;
+        font-size: 1.1rem;
+        line-height: 1;
+        margin-top: 20px;
+    }
+    .title-para{
+        padding-bottom: 20px;
+        font: 1.2rem;
     }
     
     .srh-btn input {
@@ -512,6 +522,7 @@ main{
     #new {
         padding: 8px 16px;
         font-size: 1rem;
+        margin-top: -20px;
     }
     
     .part1-title {
