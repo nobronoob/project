@@ -164,11 +164,12 @@
 .login-container {
     position: relative;
     display: inline-block;
-    font-family: Arial, sans-serif;
-    margin-right: 80px;
+    font-family: 'Open Sans', sans-serif;
+    margin-right: 0px;
 }
 
 .login-btn {
+    margin-left: 25px;
     padding: 10px 35px;
     background: #ec9c1ac8;
     color: white;
@@ -179,10 +180,11 @@
 }
 
 .login-dropdown {
+    text-decoration: underline;
     position: absolute;
     top: 100%;
     left: 0;
-    background: #3968ea ;
+    background: #ec9c1ac8;
     min-width: 160px;
     box-shadow: 0 8px 16px rgba(0,0,0,0.1);
     border-radius: 4px;
@@ -192,6 +194,7 @@
     transition: all 0.3s ease;
     transform: translateY(10px);
     margin-left: -70px;
+    margin-top: 5px;
 }
 
 .login-container:hover .login-dropdown,
@@ -202,14 +205,13 @@
 }
 
 .login-option {
+    display: flex;
+    justify-content: center;   
+    align-items: center;      
     padding: 12px 16px;
-    display: block;
     color: #333;
     text-decoration: none;
     transition: background 0.2s;
+    text-align: center;
 }
 
-
-.login-dropdown {
-    margin-top: 5px;
-}
