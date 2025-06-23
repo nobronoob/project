@@ -6,9 +6,6 @@ html{
     scroll-behavior: smooth;
     scroll-padding-top: 90px;
 }
-.name{
-    display: flex;
-}
 
 main{
     width: 100%;
@@ -22,9 +19,9 @@ main{
 }
 .image{
     background-image: url('../pic/bg.png');
-    background-size: contain;
+    background-size: cover;
     width: 100%;
-    height: 700px;
+    height: 655px;
     padding-top: 5px;
     background-repeat: no-repeat;
 }
@@ -35,10 +32,11 @@ main{
 }
 
 .title-para{
-  font-family: "Headland One", serif;
-  font-size: 4rem;
-  font-weight: 900;
-  color: #36454F;
+    font-weight: 800;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 4rem;
+    /* font-weight: 900; */
+    color: #36454F;
 }
 
 .title-2nd{
@@ -47,11 +45,11 @@ main{
 }
 .title{
     font-style: italic;
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     margin-top: 50px;
     color: #36454F;
     font-family: "Inter", sans-serif;
-    font-weight: 180;
+    font-weight: 212;
     padding-top: 0px;
     padding-bottom: 0px;
 }
@@ -118,11 +116,6 @@ cursor: pointer;
         width: 280px;
     }
 }
-.srh-btn input:hover, .srh-btn img:hover{
-    transform: scaleZ(1.0001);
-    display: inline-block;
-    transition: all 0.1s;
-}
 
 #new{
     padding: 15px 45px 15px 45px ;
@@ -130,14 +123,156 @@ cursor: pointer;
     font-size: 1.2rem;
     border-radius: 8px;
     margin-top: 20px;
-    background: rgb(241, 200, 124);
+    /* background: rgb(241, 200, 124); */
+    background: #525457;
     border: 1px solid transparent;
     cursor: pointer;
     color: white;
 }
 #new:hover{
-    transform: scaleY(1.01);
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
     transition: all .5s;
+    border: 1px solid transparent;
+    display: inline-block;
+}
+
+@media (max-width: 1200px) {
+    .image {
+        height: 550px;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .content {
+        padding-top: 180px;
+    }
+    
+    .title-para {
+        font-size: 3.5rem;
+    }
+    
+    .title {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .image {
+        height: 500px;
+    }
+    
+    .content {
+        padding-top: 150px;
+        margin-left: 8%;
+    }
+    
+    .title-para {
+        font-size: 3rem;
+        width: 450px;
+    }
+    
+    .title-2nd {
+        width: 450px;
+    }
+    
+    .title {
+        font-size: 1.1rem;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .image {
+        height: 450px;
+        width: 100%;
+        background-position: 75% center;
+    }
+    
+    .content {
+        padding-top: 120px;
+        margin-left: 5%;
+        text-align: center;
+    }
+    
+    .title-1st,
+    .title-2nd {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .title-para {
+        font-size: 2.5rem;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .title {
+        font-size: 1rem;
+        width: 90%;
+        margin: 30px auto 0;
+        text-align: center;
+    }
+    
+    #new {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .image {
+        height: 400px;
+        width: 100%;
+        background-position: 80% center;
+    }
+    
+    .content {
+        padding-top: 100px;
+    }
+    
+    .title-para {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+    
+    .title {
+        margin-top: 20px;
+        font-size: 0.5rem;
+        position: relative;
+        top: -20px;
+        line-height: 50px;
+    }
+    
+    #new {
+        padding: 10px 30px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .image {
+        height: 350px;
+        width: 100%;
+    }
+    
+    .title-para {
+        font-size: 1.8rem;
+    }
+    
+    .title {
+        font-size: 0.9rem;
+        position: relative;
+        top: -20px;
+        line-height: 50px;
+    }
+    
+    .title-para {
+        position: relative;
+        top: -50px;
+    }
 }
 
 .part1-title{

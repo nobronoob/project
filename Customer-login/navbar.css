@@ -9,22 +9,21 @@
     background: #2c3e50;
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 10;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 120px 15px 80px;
+    padding: 15px 95px 15px 110px;
     box-sizing: border-box;
 }
 
 .logo{
     margin: 5px;
-    position: relative;
-    margin-left: 50px;
+    padding-top: 6px;
 }
 .logo-icon{
-    width: 120px;
-    height: 30px;
+    width: 130px;
+    height: 35px;
 }
 .navbar p {
     font-size: 1.8rem;
@@ -47,6 +46,7 @@
     display: flex;
     align-items: center;
     gap: 20px;
+    margin-left: -40%;
 }
 
 .list {
@@ -55,7 +55,8 @@
     margin: 0;
     padding: 0;
     gap: 45px;
-    padding-right: 290px;
+    padding-left: 100px;
+    padding-right: 280px;
     padding-top: 5px;
 }
 
@@ -109,15 +110,19 @@
     transition: all 0.3s ease-in-out;
 }
 
+
 @media (max-width: 992px) {
     .list {
         gap: 25px;
+        position: relative;
+        left: 200px;
     }
 }
 
 @media (max-width: 768px) {
     .navbar {
         padding: 15px 20px;
+        /* width: 100%; */
     }
     
     .hamburger {
@@ -133,6 +138,7 @@
         height: 100vh;
         background: #2c3e50;
         flex-direction: column;
+        margin-top: -200px;
         align-items: center;
         justify-content: center;
         gap: 40px;

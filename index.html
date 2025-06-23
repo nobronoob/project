@@ -39,19 +39,16 @@
             </li>
             <li>
                 <a href="blog.html"> Blogs </a>
-            </li>
-           
-            
+            </li>    
         </ul>
-
-    </div>
-
-    <div class="login-container">
+        <div class="login-container">
             <p class="login-btn"> JOIN</p>
         <div class="login-dropdown">
-            <a href="login.html" class="login-option">Customer Login</a>
-            <a href="provider.html" class="login-option">Provider Login</a>
+            <a href="login.html" class="login-option" style="text-decoration: underline; text-underline-offset: 6px;">Customer Login</a>
+            <a href="provider.html" class="login-option" style="text-decoration: underline; text-underline-offset: 6px;">Provider Login</a>
         </div>
+    </div>
+    
     </div>   
 </header>
 
@@ -65,10 +62,10 @@
         </div>
 
         <div class="title-2nd">
-            <h3 class="title">
-                Trusted professionals at your doorstep. Book any service in minutes - fast, easy, and reliable
-            </h3>
-
+            <p class="title">
+                Trusted professionals at your doorstep. 
+                <span>Book any service in minutes - fast, easy, and reliable</span>
+            </p>
         </div>
        
         <div>
@@ -91,6 +88,7 @@
     </div>
 
 </div>
+
 <main>
     <div class="part1" id="service">
         <p class="part1-title">Our Services</p>
@@ -374,30 +372,25 @@
     
 
     const hamburger = document.getElementById('hamburger');
-    const mobileMenu = document.getElementById('mobileMenu');
-    
-    hamburger.addEventListener('click', function() {
-        this.classList.toggle('active');
-        mobileMenu.classList.toggle('active');
-        
-        if (mobileMenu.classList.contains('active')) {
-            document.body.style.overflow = 'hidden';
-        } else {
-            document.body.style.overflow = '';
+const mobileMenu = document.getElementById('mobileMenu');
+const body = document.body;
+
+hamburger.addEventListener('click', function() {
+    this.classList.toggle('active');
+    mobileMenu.classList.toggle('active');
+    body.classList.toggle('menu-open');
+});
+
+const navLinks = document.querySelectorAll('.head-sec a');
+navLinks.forEach(link => {
+    link.addEventListener('click', function() {
+        if (window.innerWidth <= 768) {
+            hamburger.classList.remove('active');
+            mobileMenu.classList.remove('active');
+            body.classList.remove('menu-open');
         }
     });
-
-    const navLinks = document.querySelectorAll('.head-sec a');
-    navLinks.forEach(link => {
-        link.addEventListener('click', function() {
-            if (window.innerWidth <= 768) {
-                hamburger.classList.remove('active');
-                mobileMenu.classList.remove('active');
-                document.body.style.overflow = '';
-            }
-        });
-    });
-
+});
     </script>
 </body>
 </html>

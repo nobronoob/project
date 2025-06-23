@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Headland+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,674;1,674&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 *{
     padding: 0px;
     margin: 0px;
@@ -557,7 +559,7 @@ margin-left: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 10;
+    z-index: 100;
     display: none; 
 }
 
@@ -592,9 +594,13 @@ main{
 }
 .head{
     font-size: 1.5rem;
+    font-family: "Rubik", sans-serif;
+    font-weight: 427;
 }
 .aut{
     font-size: 1.1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
 }
 .serv-title img{
     border-radius: 18px;
@@ -638,11 +644,13 @@ main{
   margin-left: 90px;
   padding: 20px;
   position: relative;
+  z-index: -1;
 }
 
 .service-main-content {
   flex: 1;
   max-width: 800px;
+  z-index: -1;
 }
 
 
@@ -769,6 +777,8 @@ main{
 .price-description p {
   color: #666;
   font-size: 0.9rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
   line-height: 1.5;
 }
 
@@ -965,7 +975,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 15;
+    z-index: 5;
     display: none; 
 }
 
@@ -1009,9 +1019,11 @@ main{
 }
 .pop{
     margin-top: -10px;
+    z-index: 10;
 }
 .pop a{
     text-decoration: none;
+    z-index: 10;
 }
 .pop-p{   
     color: white;
@@ -1021,6 +1033,7 @@ main{
     display: inline-block ;
     border-radius: 10px;
     margin-top: 20px;
+    z-index: 10;
 }
 body.blurred {
     overflow: hidden; 
