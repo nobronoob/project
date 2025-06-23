@@ -7,23 +7,21 @@ html{
     scroll-padding-top: 90px;
 }
 
-
 .container {
     width: 97.3%;
-    height: 350px;
-    margin-top: -50px;
+    height: 330px;
     margin-bottom: 10px;
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 20px;
+    padding-top: none;
+    padding: 50px 20px 40px 20px;
     background: #a8bacc;
     position: relative;
-    top: -32px; 
-    border-radius: 10px;     
+    top: -7px; 
+    background-image: url('pic/serviceskomanche.png');   
+    background-size: cover; 
+    background-repeat: no-repeat;
 }
 .breadcrumb {
-    padding: 50px 0px;
+    padding: 20px 0px 50px 0px;
     margin-bottom: 30px;
     margin-top: 10px;
     margin-left: 120px;
