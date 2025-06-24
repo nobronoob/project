@@ -14,7 +14,7 @@ main{
     padding-top: 50px;
 }
 .content{
-   padding-top:220px;
+    padding-top:220px;
     margin-left: 10%;
 }
 .image{
@@ -24,6 +24,7 @@ main{
     height: 655px;
     padding-top: 5px;
     background-repeat: no-repeat;
+
 }
         
 .title-1st{
@@ -52,69 +53,6 @@ main{
     font-weight: 212;
     padding-top: 0px;
     padding-bottom: 0px;
-}
-.srh-btn{
-margin-top: 50px;
-justify-content: center;
-display: flex;
-cursor: pointer;
-}
-
-.srh-btn input{
-    width: 570px;
-    height: 54.1px;
-    border: 0.1px solid rgba(0, 0, 0, 0.204);
-    border-top-left-radius: 7px;
-    border-bottom-left-radius: 7px;
-    padding-left: 20px;
-    font-size: 1.2rem;
-    display: inline-block;
-
-}
-.srh-btn img{
-    width: 30px;
-    height: 30px;
-    border: 0.1px solid rgba(0, 0, 0, 0.204);
-    padding: 12.3px;
-    border-top-right-radius: 7px;
-    border-bottom-right-radius: 7px;
-    display: inline-block;
-}
-
-.suggestions-container {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 570px;
-    max-height: 200px;
-    overflow-y: auto;
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 0 0 7px 7px;
-    display: none;
-    z-index: 100;
-}
-
-.suggestion-item {
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 1.1rem;
-}
-
-.suggestion-item:hover {
-    background-color: #f0f0f0;
-}
-
-@media (max-width: 768px) {
-    .suggestions-container {
-        width: 350px;
-    }
-}
-
-@media (max-width: 576px) {
-    .suggestions-container {
-        width: 280px;
-    }
 }
 
 #new{
@@ -189,8 +127,9 @@ cursor: pointer;
         background-position: 75% center;
     }
     
-    .content {
-        padding-top: 120px;
+    .content { 
+        position: relative;
+        top: -150px;
         margin-left: 5%;
         text-align: center;
     }
@@ -198,27 +137,34 @@ cursor: pointer;
     .title-1st,
     .title-2nd {
         width: 100%;
-        margin-left: auto;
-        margin-right: auto;
+        margin-top: 50px;
+        /* margin-bottom: 20px; */
     }
     
     .title-para {
-        font-size: 2.5rem;
-        width: 90%;
-        margin: 0 auto;
+        margin-top: 80px;
+        font-size: 2rem;
+        width: 100%;
+        height: 20px;
+        line-height: 20px;
         text-align: center;
     }
     
     .title {
-        font-size: 1rem;
+        font-size: 10px;
         width: 90%;
         margin: 30px auto 0;
         text-align: center;
+        line-height: 20px;
     }
     
     #new {
         margin-left: auto;
         margin-right: auto;
+    }
+    .left-pic, .service-plum a{
+        margin-left: 25%;
+        margin-left: 25%;
     }
 }
 
@@ -252,6 +198,7 @@ cursor: pointer;
     }
 }
 
+
 @media (max-width: 400px) {
     .image {
         height: 350px;
@@ -267,12 +214,13 @@ cursor: pointer;
         position: relative;
         top: -20px;
         line-height: 50px;
+        
     }
-    
-    .title-para {
+    .title-para{
         position: relative;
         top: -50px;
     }
+
 }
 
 .part1-title{
@@ -376,13 +324,16 @@ cursor: pointer;
     display: inline-block;
     transform: translateY(1.009);
 }
+.sec{
+    margin-top: 35px;
+}
 .fir{
     margin-top: 16.5px;
     display: inline-block;
     cursor: pointer;
 }
 .thir{
-    margin-top: 31px;
+    margin-top: 17px;
     cursor: pointer;
     display: inline-block;
 }
@@ -405,6 +356,7 @@ cursor: pointer;
     display: inline-block;
     text-align: center;
     background-color: #007BFF; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #ffffff;   
     padding: 12px 30px;        
     border-radius: 50px;       
@@ -491,13 +443,12 @@ cursor: pointer;
 
 @media (max-width: 768px) {
     .content {
-        margin-top: 100px;
+        margin-top: -10px;
         margin-bottom: 300px;
     }
     
     .title {
         font-size: 2.2rem;
-        line-height: 0px;
     }
     
     .srh-btn input {
@@ -513,7 +464,20 @@ cursor: pointer;
         width: 80%;
         margin: 10px auto;
     }
-    
+    .item-right img{
+        position: relative;
+        left: -43%;
+    }
+    .service-plum p{
+        font-size: 0.9rem;
+        margin-top: -20px;
+    }
+    .btn-item{
+        position: relative;
+        left: -30%;
+        top: -3px;
+        font-size: 1rem;
+    }
     .review-mid p {
         width: 90%;
         height: auto;
@@ -537,18 +501,30 @@ cursor: pointer;
         height: auto;
         margin-bottom: 20px;
     }
+    .title{
+       line-height: 50px;
+    }
 }
 
 @media (max-width: 576px) {
     .content {
-        margin-top: 80px;
         margin-bottom: 250px;
     }
     
-    .title {
-        font-size: 1.8rem;
+    .title-1st{
+        padding-top: 20px;
     }
-    
+    .title-para{
+        padding-bottom: 25px;
+        margin-top: 60px;
+        font: 1.1rem;
+    }
+
+    .title {
+        font-size: 0.8rem;
+        line-height: 1;
+        margin-top: 20px;
+    }
     .srh-btn input {
         width: 280px;
         height: 45px;
@@ -562,6 +538,7 @@ cursor: pointer;
     #new {
         padding: 8px 16px;
         font-size: 1rem;
+        margin-top: -20px;
     }
     
     .part1-title {
@@ -668,6 +645,7 @@ padding-left: 200px;
     align-items: center;
     margin-left: 40px;
     margin-bottom: 20px;
+    margin-top: -20px;
 }
 .review-ls span img{
     width: 127px;
@@ -965,19 +943,99 @@ padding-left: 200px;
     color: #333;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-bottom: 15px;
+    margin-top: 0px;
+    font-weight: 600;
+    font-size: 1.9rem;
 }
 
-.login-message button {
-    background-color: #4CAF50;
+.login-container {
+    position: relative;
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    margin-right: 80px;
+}
+
+.login-btn {
+    padding: 10px 35px;
+    background: #ec9c1ac8;
     color: white;
-    border: none;
-    padding: 10px 25px;
-    margin-top: 25px;
-    border-radius: 5px;
+    border: none solid transparent;
+    border-radius: 15px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
+.login-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #3968ea ;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    transform: translateY(10px);
+    margin-left: -70px;
+}
+
+.login-container:hover .login-dropdown,
+.login-dropdown:hover {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.login-option {
+    padding: 12px 16px;
+    display: block;
+    color: #333;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+
+.login-dropdown {
+    margin-top: 5px;
+}
+
+.pop-head{
+    color: #333;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    font-size: 1.1rem;
+}
+
+.exist{
+    position: relative;
+    top: -30px;
+    padding-left: 102%;
+}
+.exist p::after{
+    content: 'x';
+    color: #525457;
+    font-size: 1.45rem;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.pop{
+    margin-top: -10px;
+}
+.pop a{
+    text-decoration: none;
+}
+.pop-p{   
+    color: white;
+    background: blue;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    display: inline-block ;
+    border-radius: 10px;
+    margin-top: 20px;
+}   a
 body.blurred {
     overflow: hidden; 
 }
