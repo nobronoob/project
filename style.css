@@ -645,7 +645,7 @@ padding-left: 200px;
     align-items: center;
     margin-left: 40px;
     margin-bottom: 20px;
-    margin-top: -20px;
+    
 }
 .review-ls span img{
     width: 127px;
@@ -722,7 +722,7 @@ padding-left: 200px;
     background-color: #ecf0f14e;
 }
 .review-list:hover{
-    transform: scaleY(1.009);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
     border: 1px solid  transparent;
     transition: all .5s;
 }
@@ -1102,7 +1102,7 @@ body.blurred {
     position: absolute;
     top: -10px;
     right: -15px;
-    background-color: #f39c12; 
+    background-color: #ce9232ef; 
     color: white;
     width: 30px;
     height: 30px;
