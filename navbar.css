@@ -147,6 +147,7 @@
         flex-direction: column;
         text-align: center;
         gap: 25px;
+        margin-right: 0px;
     }
 
     .hamburger.active span:nth-child(1) {

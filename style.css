@@ -138,7 +138,7 @@ main{
     .title-2nd {
         width: 100%;
         margin-top: 50px;
-        margin-bottom: 20px;
+        /* margin-bottom: 20px; */
     }
     
     .title-para {
@@ -464,7 +464,20 @@ main{
         width: 80%;
         margin: 10px auto;
     }
-    
+    .item-right img{
+        position: relative;
+        left: -43%;
+    }
+    .service-plum p{
+        font-size: 0.9rem;
+        margin-top: -20px;
+    }
+    .btn-item{
+        position: relative;
+        left: -30%;
+        top: -3px;
+        font-size: 1rem;
+    }
     .review-mid p {
         width: 90%;
         height: auto;
@@ -495,20 +508,23 @@ main{
 
 @media (max-width: 576px) {
     .content {
-        margin-top: 80px;
         margin-bottom: 250px;
     }
     
+    .title-1st{
+        padding-top: 20px;
+    }
+    .title-para{
+        padding-bottom: 25px;
+        margin-top: 60px;
+        font: 1.1rem;
+    }
+
     .title {
-        font-size: 1.1rem;
+        font-size: 0.8rem;
         line-height: 1;
         margin-top: 20px;
     }
-    .title-para{
-        padding-bottom: 20px;
-        font: 1.2rem;
-    }
-    
     .srh-btn input {
         width: 280px;
         height: 45px;
@@ -629,6 +645,7 @@ padding-left: 200px;
     align-items: center;
     margin-left: 40px;
     margin-bottom: 20px;
+    margin-top: -20px;
 }
 .review-ls span img{
     width: 127px;

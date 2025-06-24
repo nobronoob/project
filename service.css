@@ -105,12 +105,15 @@ html{
         height: 280px;
         margin-top: -40px;
         top: -25px;
+        width: 92%;
+        object-fit: contain;
+
     }
     
     .breadcrumb {
-        margin-left: 40px;
+        margin-left: 50px;
         padding: 40px 0;
-        margin-right: -500px;
+        /* margin-right: -500px; */
     }
     
     .breadcrumb-title {
