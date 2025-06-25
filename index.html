@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Headland+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,674;1,674&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet"><title>Main Page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,674;1,674&display=swap" rel="stylesheet">
+    <title>Main Page</title>
     <link rel="shortcut icon" href="pic/favicon.png" type="image/x-icon">
 </head>
 <body id="Back">
@@ -44,7 +45,7 @@
             <p class="login-btn"> JOIN</p>
         <div class="login-dropdown">
             <a href="login.html" class="login-option" style="text-decoration: underline; text-underline-offset: 6px;">Customer Login</a>
-            <a href="provider.html" class="login-option" style="text-decoration: underline; text-underline-offset: 6px;">Provider Login</a>
+            <a href="providerlogin.html" class="login-option" style="text-decoration: underline; text-underline-offset: 6px;">Provider Login</a>
         </div>
     </div>
     
@@ -123,7 +124,7 @@
                                 <li> No extra fees for nights/weekends</li>
                                 <li> Leak detection & repair</li>                                   
                             </ul>  
-                           <a href="service/electric.html" > <button class="btn-item sec arrow" style="margin-top: 20px;">Find Worker</button></a>    
+                           <a href="service/electric.html" > <button class="btn-item sec arrow" style="margin-top: 15px;">Find Worker</button></a>    
                 </span>
                  
             </div>
@@ -324,10 +325,10 @@
       <div class="footer-section">
         <h3>Contact Info</h3>
         <ul>
-          <li><a href="+977 9841789457"> 📞 (+977) 984-1789-457</a></li>
+          <li>📞 (+977) 984-1789-457</li>
           <li>📞 (01) 748-94-562</li>
-          <li><a href="mailto:kamparyo@gmail.com">📧 kamparyo@gmail.com</a></li>
-          <li><a href="mailto:support@kamparyocom">📧 support@kamparyo.com</a></li>
+          <li>📧 kamparyo@gmail.com</li>
+          <li>📧 support@kamparyo.com</li>
           <li>🏠 kathmandu, Nepal</li>
           <li>🏙️ Kalanki, 14</li>
         </ul>
@@ -370,65 +371,25 @@
         });
     
 
-    document.addEventListener('DOMContentLoaded', function() {
-    // Hamburger menu functionality
     const hamburger = document.getElementById('hamburger');
-    const mobileMenu = document.getElementById('mobileMenu');
-    const body = document.body;
-    
-    hamburger.addEventListener('click', function() {
-        this.classList.toggle('active');
-        mobileMenu.classList.toggle('active');
-        body.classList.toggle('no-scroll');
-        
-        // Toggle aria-expanded attribute for accessibility
-        const isExpanded = this.getAttribute('aria-expanded') === 'true';
-        this.setAttribute('aria-expanded', !isExpanded);
-        mobileMenu.setAttribute('aria-hidden', isExpanded);
-    });
+const mobileMenu = document.getElementById('mobileMenu');
+const body = document.body;
 
-    // Close menu when clicking on links (for mobile)
-    const navLinks = document.querySelectorAll('.head-sec a');
-    navLinks.forEach(link => {
-        link.addEventListener('click', function() {
-            if (window.innerWidth <= 768) {
-                hamburger.classList.remove('active');
-                mobileMenu.classList.remove('active');
-                body.classList.remove('no-scroll');
-                hamburger.setAttribute('aria-expanded', 'false');
-                mobileMenu.setAttribute('aria-hidden', 'true');
-            }
-        });
-    });
-
-    // Login overlay functionality
-    const buttons = document.querySelectorAll('#new');
-    const overlay = document.getElementById('loginOverlay');
-    
-    buttons.forEach(button => {
-        if (!button.closest('.overlay')) {
-            button.addEventListener('click', function(e) {
-                e.preventDefault();
-                overlay.style.display = 'flex';
-                document.body.classList.add('blurred');
-            });
-        }
-    });
+hamburger.addEventListener('click', function() {
+    this.classList.toggle('active');
+    mobileMenu.classList.toggle('active');
+    body.classList.toggle('menu-open');
 });
 
-// Close menu when resizing to desktop
-window.addEventListener('resize', function() {
-    const hamburger = document.getElementById('hamburger');
-    const mobileMenu = document.getElementById('mobileMenu');
-    const body = document.body;
-    
-    if (window.innerWidth > 768) {
-        hamburger.classList.remove('active');
-        mobileMenu.classList.remove('active');
-        body.classList.remove('no-scroll');
-        hamburger.setAttribute('aria-expanded', 'false');
-        mobileMenu.setAttribute('aria-hidden', 'true');
-    }
+const navLinks = document.querySelectorAll('.head-sec a');
+navLinks.forEach(link => {
+    link.addEventListener('click', function() {
+        if (window.innerWidth <= 768) {
+            hamburger.classList.remove('active');
+            mobileMenu.classList.remove('active');
+            body.classList.remove('menu-open');
+        }
+    });
 });
     </script>
 </body>

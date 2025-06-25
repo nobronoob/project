@@ -12,7 +12,7 @@ html{
 
 .navbar {
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     background: #2c3e50;
     position: sticky;
     top: 0;
@@ -756,7 +756,6 @@ main{
   color: #666;
   font-size: 0.8rem;
 }
-
 .dates {
   display: flex;
   justify-content: space-evenly;
@@ -792,13 +791,9 @@ main{
     border-bottom: 50%;
     /* width: 20px; */
 }
-.dat{
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
 .dates div {
-    width: 18%;
-    height: 20px;
+    width: 10%;
+    height: 23px;
     text-align: center;
     cursor: pointer;
 }
@@ -859,7 +854,21 @@ main{
 .time-slots button:focus {
   background: #e74c3c;
 }
-
+.description{
+    width: 500px;
+    height: 300px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.description p{
+    font-size: 2rem;
+}
+.description textarea{
+    width: 450px;
+    height: 500px;
+    border-radius: 10px;
+    border: 0px solid transparent;
+}
 .book-now-btn {
   width: 100%;
   padding: 12px;
